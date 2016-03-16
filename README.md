@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pradel/ionic-push.svg?branch=master)](https://travis-ci.org/pradel/ionic-push)
+
 # ionic-push
 
 A node client for pushing android and ios notifications to your ionic app.
