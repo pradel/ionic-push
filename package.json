@@ -1,5 +1,5 @@
 {
-  "name": "node-ionic-push",
+  "name": "ionic-push",
   "version": "0.0.1",
   "description": "Ionic push server for nodejs",
   "main": "lib/main.js",
