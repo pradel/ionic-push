@@ -32,6 +32,14 @@ ionic.push({
 });
 ```
 
+require
+
+```
+var IonicPush = require('ionic-push').default;
+
+var ionic = new IonicPush(myJwt, myProfile);
+```
+
 ## Api
 
 ### new IonicPush
@@ -49,6 +57,14 @@ Create a new IonicPush instance.
 
 An IonicPush instance.
 
+##### Example
+
+```
+import IonicPush from 'ionic-push';
+
+const ionic = new IonicPush(myJwt, myProfile);
+```
+
 ### testToken
 
 Test if your token is valid.
@@ -56,6 +72,16 @@ Test if your token is valid.
 ##### Returns
 
 A Promise.
+
+#### Example
+
+```
+ionic.testToken().then(function() {
+	console.log('my token is ok');
+}).catch(function(err) {
+	console.log('there is an error', err);
+});
+```
 
 ### push
 
@@ -69,6 +95,30 @@ Push a new notification.
 
 A Promise.
 
+#### Example
+
+```
+ionic.push({
+	"tokens": ["your", "device", "tokens"],
+	"notification": {
+    	"title": "Hi",
+    	"message": "Hello world!",
+    "android": {
+    	"title": "Hey",
+        "message": "Hello Android!"
+    },
+    "ios": {
+        "title": "Howdy",
+        "message": "Hello iOS!"
+    }
+  }
+}).then(function() {
+	console.log('successfully sent push');
+}).catch(function(err) {
+	console.log('there is an error', err);
+});
+```
+
 ### checkStatus
 
 Check the status of a notification.
@@ -80,3 +130,13 @@ Check the status of a notification.
 ##### Returns
 
 A Promise.
+
+#### Example
+
+```
+checkStatus(myuuid).then(function(data) {
+	console.log(data);
+}).catch(function(err) {
+	console.log('there is an error', err);
+});
+```
