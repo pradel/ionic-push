@@ -2,6 +2,7 @@ import { assert } from 'chai';
 import Promise from 'bluebird';
 import IonicPush from '../src/main';
 
+describe('IonicPush', () => {
   const jwt = 'jwt';
   const profile = 'profile';
   const ionic = new IonicPush(jwt, profile);
