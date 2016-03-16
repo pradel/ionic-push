@@ -10,6 +10,7 @@
     "test": "npm run lint"
   },
   "dependencies": {
+    "babel-plugin-transform-object-assign": "^6.5.0",
     "bluebird": "^3.3.4",
     "request": "^2.69.0"
   },
