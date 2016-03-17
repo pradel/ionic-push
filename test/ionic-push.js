@@ -40,7 +40,7 @@ describe('IonicPush', () => {
     });
 
     it('should return a promise', () => {
-      const promise = ionic.testToken();
+      const promise = ionic.testToken().catch(() => null);
       assert.ok(promise instanceof Promise);
     });
 
@@ -94,7 +94,7 @@ describe('IonicPush', () => {
     });
 
     it('should return a promise', () => {
-      const promise = ionic.push();
+      const promise = ionic.push().catch(() => null);
       assert.ok(promise instanceof Promise);
     });
 
@@ -169,7 +169,7 @@ describe('IonicPush', () => {
     });
 
     it('should return a promise', () => {
-      const promise = ionic.checkStatus();
+      const promise = ionic.checkStatus().catch(() => null);
       assert.ok(promise instanceof Promise);
     });
 
