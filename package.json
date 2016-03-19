@@ -16,6 +16,7 @@
   },
   "author": "Pradel léo <pradel.leo@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/pradel/ionic-push",
   "dependencies": {
     "bluebird": "^3.3.4",
     "superagent": "^1.8.1"
