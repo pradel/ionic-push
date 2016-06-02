@@ -1,4 +1,7 @@
+[![npm version](https://badge.fury.io/js/ionic-push.svg)](https://badge.fury.io/js/ionic-push)
 [![Build Status](https://travis-ci.org/pradel/ionic-push.svg?branch=master)](https://travis-ci.org/pradel/ionic-push)
+[![Dependency Status](https://david-dm.org/pradel/ionic-push.svg)](https://david-dm.org/pradel/ionic-push)
+[![devDependency Status](https://david-dm.org/pradel/ionic-push/dev-status.svg)](https://david-dm.org/pradel/ionic-push#info=devDependencies)
 
 # ionic-push
 
