@@ -35,7 +35,7 @@
     "body-parser": "^1.15.1",
     "chai": "^3.5.0",
     "eslint": "^2.11.1",
-    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-config-airbnb-base": "^4.0.0",
     "eslint-plugin-import": "^1.8.1",
     "express": "^4.13.4",
     "express-remove-route": "^0.1.1",
