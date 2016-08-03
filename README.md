@@ -56,6 +56,10 @@ Create a new IonicPush instance.
 
 * `profile` **string** _required_ [A valid ionic profile](http://docs.ionic.io/v2.0.0-beta/docs/security-profiles)
 
+* `options` **object** _optional_ Options object.
+
+* `options.Promise` **promise** _optional_ Promise to overwrite for requests.
+
 ##### Returns
 
 An IonicPush instance.

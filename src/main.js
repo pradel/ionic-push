@@ -1,15 +1,15 @@
-import Promise from 'bluebird';
 import request from 'superagent';
 
 export default class IonicPush {
   constructor(jwt, profile, options = {}) {
     this.jwt = jwt;
     this.profile = profile;
+    this.Promise = options.Promise || Promise;
     this.baseApi = options.baseApi || 'https://api.ionic.io';
   }
 
   testToken() {
-    return new Promise((resolve, reject) => {
+    return new this.Promise((resolve, reject) => {
       request.get(`${this.baseApi}/auth/test`)
         .set('Authorization', `Bearer ${this.jwt}`)
         .end((err, res) => {
@@ -20,7 +20,7 @@ export default class IonicPush {
   }
 
   push(data) {
-    return new Promise((resolve, reject) => {
+    return new this.Promise((resolve, reject) => {
       const params = Object.assign({
         profile: this.profile,
       }, data);
@@ -35,7 +35,7 @@ export default class IonicPush {
   }
 
   checkStatus(id) {
-    return new Promise((resolve, reject) => {
+    return new this.Promise((resolve, reject) => {
       request.get(`${this.baseApi}/push/notifications/${id}/messages`)
         .set('Authorization', `Bearer ${this.jwt}`)
         .end((err, res) => {

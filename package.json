@@ -24,7 +24,6 @@
   "license": "MIT",
   "homepage": "https://github.com/pradel/ionic-push",
   "dependencies": {
-    "bluebird": "^3.4.1",
     "superagent": "^2.1.0"
   },
   "devDependencies": {
@@ -32,6 +31,7 @@
     "babel-core": "^6.11.4",
     "babel-plugin-transform-object-assign": "^6.8.0",
     "babel-preset-es2015": "^6.9.0",
+    "bluebird": "^3.4.1",
     "body-parser": "^1.15.2",
     "chai": "^3.5.0",
     "eslint": "^3.2.2",

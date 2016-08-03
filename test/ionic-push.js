@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import Promise from 'bluebird';
+import BluebirdPromise from 'bluebird';
 import express from 'express';
 import removeRoute from 'express-remove-route';
 import bodyParser from 'body-parser';
@@ -32,6 +32,17 @@ describe('IonicPush', () => {
 
   it('should have overwrite this.baseApi for ionicTest', () => {
     assert.equal(ionicTest.baseApi, baseApiLocal);
+  });
+
+  it('should use native promise by default', () => {
+    assert.equal(ionic.Promise, Promise);
+  });
+
+  it('should overwrite native Promise', () => {
+    const testPromise = new IonicPush(jwt, profile, {
+      Promise: BluebirdPromise,
+    });
+    assert.equal(testPromise.Promise, BluebirdPromise);
   });
 
   describe('#testToken', () => {
