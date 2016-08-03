@@ -13,7 +13,7 @@ A node client for pushing android and ios notifications to your ionic app.
 
 ## Usage
 
-```
+```javascript
 import IonicPush from 'ionic-push';
 
 const ionic = new IonicPush(myJwt, myProfile);
@@ -37,7 +37,7 @@ ionic.push({
 
 require
 
-```
+```javascript
 var IonicPush = require('ionic-push').default;
 
 var ionic = new IonicPush(myJwt, myProfile);
@@ -62,7 +62,7 @@ An IonicPush instance.
 
 ##### Example
 
-```
+```javascript
 import IonicPush from 'ionic-push';
 
 const ionic = new IonicPush(myJwt, myProfile);
@@ -78,7 +78,7 @@ A Promise.
 
 #### Example
 
-```
+```javascript
 ionic.testToken().then(function() {
 	console.log('my token is ok');
 }).catch(function(err) {
@@ -100,7 +100,7 @@ A Promise.
 
 #### Example
 
-```
+```javascript
 ionic.push({
 	"tokens": ["your", "device", "tokens"],
 	"notification": {
@@ -136,7 +136,7 @@ A Promise.
 
 #### Example
 
-```
+```javascript
 checkStatus(myuuid).then(function(data) {
 	console.log(data);
 }).catch(function(err) {
