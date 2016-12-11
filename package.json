@@ -24,7 +24,7 @@
   "license": "MIT",
   "homepage": "https://github.com/pradel/ionic-push",
   "dependencies": {
-    "superagent": "^2.1.0"
+    "superagent": "^3.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
