@@ -5,6 +5,8 @@
 
 # ionic-push
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pradel/ionic-push.svg)](https://greenkeeper.io/)
+
 A node client for pushing android and ios notifications to your ionic app.
 
 ## Install
